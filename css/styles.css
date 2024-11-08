@@ -72,7 +72,7 @@
 
    /* heder */
    .page {
-      font-family: "Raleway", sans-serif;
+      font-family: "Nunito", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       font-size: 16px;
@@ -83,6 +83,7 @@
    }
 
    .header {
+      
       border-bottom: 1px solid var(--br-color);
       box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
    }
@@ -94,12 +95,14 @@
    }
 
    .header-container {
+      
       display: flex;
       align-items: center;
       gap: 40px;
    }
 
    .section-nav {
+      
       display: flex;
       align-items: center;
       margin-right: auto;
@@ -122,7 +125,7 @@
 
    .logo,
    .logo-web {
-      font-family: "Raleway", sans-serif;
+      font-family: "Nunito", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       font-size: 18px;
@@ -132,6 +135,7 @@
    }
 
    .list {
+      
       list-style: none;
       text-decoration: none;
       padding: 0;
@@ -147,6 +151,9 @@
    }
 
    .site-nav .link {
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
       display: block;
       padding-top: 24px;
       padding-bottom: 24px;
@@ -230,6 +237,9 @@
    }
 
    .hero-button {
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
       font-weight: 500;
       font-size: 16px;
       line-height: 1.5;
