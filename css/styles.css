@@ -557,6 +557,9 @@
       background-color: #31D0AA;
    }
 
+   .your-story{
+      display: flex;
+   }
    .footer-form {
       display: flex;
       justify-content: flex-end;
