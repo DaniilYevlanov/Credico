@@ -5,23 +5,7 @@ body {
       color: var(--text-ptimary-clr);
    }
    
-
-   /* reset */
-   ul {
-      list-style-type: none;
-   }
-
-   h1,
-   h2,
-   h3,
-   h4,
-   p,
-   ul {
-      margin: 0;
-      padding: 0;
-   }
-
-   /* Components */
+/* Components */
 
    .container {
       width: 1158px;
@@ -261,36 +245,23 @@ body {
 
    /*Privilege*/
 
-   .privilege {
-      padding-top: 120px;
-      padding-bottom: 120px;
-   }
-
-   .privilege-list {
-      display: flex;
-      gap: 24px;
-   }
-
-   .privilege-item {
-      flex-basis: calc((100% - 72px) / 4);
-   }
-
-   .privelege-icon {
-      display: flex;
-      align-items: center;
+   .magic-dreams {
+      margin-top: 90px;
+      padding-top: 96px;
+      padding-bottom: 96px;
+      background-color:rgb(75, 75, 75 ,0.4);
+      padding-top: 300px;
+      padding-bottom: 300px;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(10, 10, 10, 10);
       justify-content: center;
-      height: 112px;
-      margin-bottom: 8px;
-      border-radius: 4px;
-      align-items: center;
-
-      background-color: var(--light-clr);
    }
+.magic-div{
 
-   .privelege-img {
-      width: 64px;
-      height: 64px;
-   }
+}
+ .magic-title {
+   color: #f4f4fd;
+ }
 
    .section-subtitle {
       margin-bottom: 8px;
@@ -334,7 +305,7 @@ body {
    .team {
       padding-top: 96px;
       padding-bottom: 96px;
-      background-color:rgb(75, 75, 75 ,10);
+      background-color:rgb(75, 75, 75 ,0.4);
       padding-top: 300px;
       padding-bottom: 300px;
       border-radius: 25px;
