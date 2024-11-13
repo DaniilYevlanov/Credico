@@ -21,9 +21,6 @@
             <li class="item">
               <a href="./index.html" class="link current list">Мрії</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link list">haahhahaha</a>
-            </li>
           </ul>
         </nav>
       </div>
@@ -44,10 +41,18 @@
       <section class="magic-dreams">
         <div class="magic-divmagic-div"> 
           <h1 class="magic-title">Як відбуваються подорожі у сні</h1></div>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+          <p1 class="magic-text">У сновидіннях люди можуть переноситися в дивовижні світи, 
+            які не існують у реальності. Це може бути:</p1>
+      <li>1. Небесний ліс — місце з гігантськими деревами, які сягають небес,
+         а замість листя на них ростуть зірки. Коли людина ступає на м’який мох цього лісу, 
+         вона відчуває невагомість і може злетіти в небо.</li>
+      <li>2. Місто з минулого — сон може перенести вас у давні часи, в місто, яке зникло багато століть тому. 
+        Ви гуляєте серед руїн, але раптом бачите, як вулиці оживають, з’являються мешканці, і ви стаєте частиною їхнього життя.</li>
+      <li> 3. Темний океан — величезне море без меж, де вода чорна, наче ніч. Над ним нависає туман, а хвилі можуть говорити. 
+        Коли ви опиняєтеся в цьому місці, то часто зустрічаєте загадкових істот, які здаються спогадами або забутими емоціями.</li>
+      <li>4. Замок кривих дзеркал — це лабіринт із дзеркал, кожне з яких показує інший світ або іншу версію вашого “я”. 
+        Переходячи від одного дзеркала до іншого, ви можете потрапити в різні виміри, кожен з яких має свої правила і небезпеки.
+      </li>
         </section>
 
       <section class="doing">
@@ -76,28 +81,10 @@
             Магічні сни це диво, яким ми захоплюємось, та не завжди можемо пояснити.
           </p>
         </div>
-        
-        <div>
-          <p class="footer-form-text">Надсилай свої цікаві історії нам на пошту</p>
-          <form class="footer-form">
-            <label for="user_sub"></label>
-            <input
-              id="user_sub"
-              type="email"
-              name="user-email"
-              class="footer-form-input"
-              placeholder="E-mail"
-              required
-            />
 
-            <button type="submit" class="footer-form-button">
-              Надіслати
-              <svg class="footer-form-icon" width="24" height="20">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+       <div class="moon">
+        <img src="/images/img-3.png" width="350" >
+       </div>
       </div>
     </footer>
 
@@ -105,14 +92,11 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
-          <svg class="modal-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-modal"></use>
-          </svg>
         </button>
-        <p class="form-text">Leave your contacts and we will call you back</p>
+        <p class="form-text">Залиште свої контакти, і ми зв'яжемося з вами</p>
         <form class="modal-form">
           <div class="modal-form-container">
-            <label for="user_name" class="modal-form-field">Name</label>
+            <label for="user_name" class="modal-form-field">Ім'я</label>
             <span class="user-container">
               <input
                 id="user_name"
@@ -121,22 +105,6 @@
                 class="modal-form-input"
                 required
               />
-              <svg width="18" height="18" class="form-icon">
-                <use href="./images/icons.svg#icon-name"></use>
-              </svg>
-            </span>
-            <label for="user_phone" class="modal-form-field">Phone </label>
-            <span class="user-container">
-              <input
-                id="user_phone"
-                type="tel"
-                name="user-phone"
-                class="modal-form-input"
-                required
-              />
-              <svg width="18" height="24" class="form-icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
             </span>
             <label for="user_email" class="modal-form-field">Email </label>
             <span class="user-container">
@@ -147,11 +115,8 @@
                 class="modal-form-input"
                 required
               />
-              <svg width="18" height="24" class="form-icon">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
             </span>
-            <label for="user_message" class="modal-form-field">Comment </label>
+            <label for="user_message" class="modal-form-field">Ваша історія </label>
             <textarea
               id="user_message"
               name="user-message"
@@ -168,12 +133,9 @@
               class="modal-form-check visually-hidden"
             />
             <span class="user-policy-check">
-              <svg width="10" height="8">
-                <use href="./images/icons.svg#icon-click"></use>
-              </svg>
             </span>
           </label>
-          <button type="submit" class="modal-form-submit">Send</button>
+          <button type="submit" class="modal-form-submit">Надіслати</button>
         </form>
       </div>
     </div>
