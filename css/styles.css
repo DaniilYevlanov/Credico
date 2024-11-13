@@ -192,9 +192,17 @@ body {
    }
  .magic-title {
    color: #f4f4fd;
+   font-size: 38px;
  }
  .magic-text{
    color: #f4f4fd;
+   font-size: 32px;
+ }
+ ol{
+   color: #f4f4fd ;
+   font-family: "Nunito", sans-serif;
+   font-size: 26px;
+
  }
    /* What are we doing */
 
