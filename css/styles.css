@@ -139,7 +139,7 @@ body {
       border-radius: 1500px;
       box-shadow: 0 4px 8px rgba(10, 10, 10, 10);
       background-image:
-         url(/images/img-2.png);
+         url(../images/img-2.png);
    }
 
    .hero-title {
