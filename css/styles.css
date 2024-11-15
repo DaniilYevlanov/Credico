@@ -230,6 +230,14 @@ margin: auto;
     flex-direction: column;
     gap: 10px;
    }
+
+   .moon {
+      flex-shrink: 0;
+  }
+  .moon img {
+   max-width: 100%;
+   height: auto;
+}
    .container-footer {
       display: flex;
       width: 20000px;
