@@ -180,9 +180,9 @@ body {
    /*Privilege*/
 
  .magic-title {
+margin: auto;
    color: #f4f4fd;
    font-size: 38px;
-   justify-content: center;
    
  }
  .magic-text{
@@ -196,22 +196,27 @@ body {
 
  }
    /* What are we doing */
-
+.dreams{
+   width: 1700px;
+   margin: auto;
+}
    .doing {
       padding-bottom: 120px;
    }
-
-   .events {
+   .magic-divmagic-div {
+      display: flex;
+      flex-wrap: wrap;
       margin-top: 90px;
-      padding-top: 96px;
-      padding-bottom: 96px;
       background-color:rgb(75, 75, 75 ,0.4);
       padding-top: 75px;
       padding-bottom: 75px;
       border-radius: 25px;
       box-shadow: 0 4px 8px rgba(10, 10, 10, 10);
-      justify-content: center;
-   }
+      }
+      .gay-porn{
+         width: 1600px;
+         margin-right: 50px;
+      }
 
    /* Customers */
 
@@ -447,4 +452,92 @@ body {
    .modal-form-submit:hover,
    .modal-form-submit:focus {
       background-color: var(--nav-color);
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+   .portfolio-list {
+      display: flex;
+      flex-wrap: nowrap;
+      column-gap: 24px;
+      row-gap: 48px;
+      margin-left: 70px;
+   }
+
+   .portfolio-item {
+      width: 300px;
+   }
+
+   .portfolio-link {
+      display: block;
+      text-decoration: none;
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .portfolio-overlay {
+      position: relative;
+      overflow: hidden;
+      border-radius: 50px;
+   }
+
+   .portfolio-overlay-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      margin-bottom: 0;
+      margin-top: 0;
+      width: 100%;
+      background-color: rgb(142, 4, 142);
+      padding-top: 40px;
+      padding-right: 32px;
+      padding-left: 32px;
+      line-height: 1.5;
+      color: white;
+      overflow: auto;
+      transform: translate(0, 100%);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      width: 250px;
+      font-size:larger;
+   }
+
+   .portfolio-link:hover .portfolio-overlay-text,
+   .portfolio-link:focus .portfolio-overlay-text {
+      transform: translate(0, 0);
+   }
+
+   .portfolio-text {
+      margin: 0;
+      color: black;
+   }
+
+   .portfolio-card {
+      border-radius: 30px;
+      background-color: white;
+      padding: 32px 0 32px 16px;
+      border: 1px solid var(--br-color);
+      border-top: none;
+   
+   }
+
+   .portfolio-link:hover,
+   .portfolio-link:focus {
+      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+   }
+   .block-list{
+      border-radius: 50px;
+      width: 300px;
+   }
+   .section-subtitle{
+    text-align: center;
    }
