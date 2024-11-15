@@ -177,7 +177,6 @@ body {
       background-color: var(--nav-color);
    }
 
-   /*Privilege*/
 
  .magic-title {
 margin: auto;
@@ -195,7 +194,6 @@ margin: auto;
    font-size: 26px;
 
  }
-   /* What are we doing */
    .magic-divmagic-div {
       display: flex;
       flex-direction: column;
