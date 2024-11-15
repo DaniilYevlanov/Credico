@@ -46,8 +46,8 @@ body {
      
 
 
-   .container { 
-      max-width: 1158px;
+     .container { 
+      max-width: 1500px;
       margin: 0 auto;
       padding: 0 15px;
    }
@@ -207,10 +207,6 @@ margin: auto;
       border-radius: 25px;
       box-shadow: 0 4px 8px rgba(10, 10, 10, 10);
       }
-      .gay-porn{
-         width: 1600px;
-         margin-right: 50px;
-      }
 
    /* Customers */
 
@@ -233,8 +229,12 @@ margin: auto;
 
    .container-footer {
       display: flex;
-      justify-content: space-between;
+      width: 20000px;
       align-items: center;
+   }
+   .Cytata {
+      color: white;
+      font-size: 40px;
    }
    
    .footer-text {
