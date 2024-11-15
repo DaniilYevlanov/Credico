@@ -3,7 +3,16 @@ body {
       font-size: 16px;
       line-height: 1.5;
       color: var(--text-ptimary-clr);
-   }
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+     }
+     html,
+   body {
+    overflow-x: hidden;
+}
 
    :root {
       --primary-text-color: #434455;
@@ -45,7 +54,17 @@ body {
      }
      
 
+     main {
+      flex: 1;
+  }
+    main > section:last-child {
+    padding-bottom: 0;
+   }
 
+   section {
+      margin: 0;
+      padding-bottom: 0;
+  }
      .container { 
       max-width: 1500px;
       margin: 0 auto;
@@ -127,21 +146,20 @@ body {
    }
    
    .hero {
-      padding-top: 188px;
-      padding-bottom: 188px;
+      padding-top: 280px;
+      padding-bottom: 280px;
       text-align: center;
       background-color: lightblue;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      max-width: 1440px;
+      max-width: 90%;
+      width: 90%;
       margin: 0 auto;
-      border-radius: 1500px;
-      box-shadow: 0 4px 8px rgba(10, 10, 10, 10);
-      background-image:
-         url(../images/img-2.png);
-   }
-
+      border-radius: 800px;
+      box-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
+      background-image: url(../images/img-2.png);
+  }
    .hero-title {
       -webkit-text-stroke: 0.7px #2e2f42;
       color: white;
@@ -197,16 +215,20 @@ margin: auto;
  }
    /* What are we doing */
    .magic-divmagic-div {
-      justify-content: center;
       display: flex;
-      flex-wrap: wrap;
-      margin-top: 90px;
-      background-color:rgb(75, 75, 75 ,0.4);
-      padding-top: 75px;
-      padding-bottom: 75px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      background-color: rgba(75, 75, 75, 0.4);
       border-radius: 25px;
-      box-shadow: 0 4px 8px rgba(10, 10, 10, 10);
-      }
+      box-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
+      width: fit-content; 
+      height: fit-content; 
+      margin: 0 auto; 
+      margin-bottom: 50px;
+      margin-top: 50px;
+  }
 
    /* Customers */
 
@@ -218,15 +240,31 @@ margin: auto;
    /* footer */
    .logo {
       color: var(--accent-color);
-
    }
 
    .footer {
-      background-color: var(--secondary-text-color); 
-      padding-top: 100px;
-      padding-bottom: 100px;
+      width: 100%;
+      background-color: var(--secondary-text-color);
+      color: #E7E9FC;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+    .footer-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
    }
 
+   .moon {
+      flex-shrink: 0;
+  }
+  .moon img {
+   max-width: 100%;
+   height: auto;
+}
    .container-footer {
       display: flex;
       width: 20000px;
@@ -234,7 +272,8 @@ margin: auto;
    }
    .Cytata {
       color: white;
-      font-size: 40px;
+      font-size: 25px;
+
    }
    
    .footer-text {
@@ -545,3 +584,12 @@ margin: auto;
       margin-bottom: 50px;
   }
   
+.Stories,
+.Travelers {
+    max-width: 1525px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box; 
+}
