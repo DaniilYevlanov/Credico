@@ -9,8 +9,9 @@ body {
       margin: 0;
       padding: 0;
      }
-     html,
+   html,
    body {
+      scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -77,73 +78,54 @@ body {
       gap: 40px;
       margin-bottom: 25px;
    }
-
-   .section-nav {
-      display: flex;
-      align-items:center;
-      margin-right: auto;
-      gap: 76px;
-   }
-
-   .site-nav {
-      display: flex;
-      gap: 40px;
-
-   }
-
    .logo-web {
-   color: white;
-   }
+      color: white;
+      }
+   
+      .logo,
+      .logo-web {
+         margin-right: 125px;
+         font-family: "Nunito", sans-serif;
+         font-weight: 700;
+         font-size: 25px;
+         text-transform: uppercase;
+         text-decoration: none;
+        }
 
-   .logo,
-   .logo-web {
-      margin-right: 125px;
-      font-family: "Nunito", sans-serif;
-      font-weight: 700;
-      font-size: 25px;
-      text-transform: uppercase;
-     }
-
-
-   .list {
-      list-style: none;
-      text-decoration: none;
-      padding: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-   }
- 
-   .site-nav .link {
-      font-family: "Nunito", sans-serif; 
-    font-weight: 600; 
-    font-size: 20px; 
-    letter-spacing: 0.03em; 
-      font-style: normal;
-      display: block;
-      padding-top: 24px;
-      padding-bottom: 11px;
-
-      color: var(--white-color);
-
-      position: relative;
-
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-
-   .site-nav .link.current {
-      color: var(--nav-color);
-   }
-
-   .site-nav .link.current::after {
-      content: "";
-      width: 100%;
-      height: 4px;
-      background-color: var(--nav-color);
-      border-radius: 2px;
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-   }
+        .section-nav {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 40px;
+         width: 100%;
+       }
+       
+       .site-nav {
+         margin-top: 35px;
+         display: flex;
+         gap: 40px;
+         align-items: center;
+       }
+       
+       .site-nav .item {
+         display: flex;
+         gap: 20px;
+       }
+       
+       .site-nav .link {
+         font-family: "Nunito", sans-serif;
+         font-weight: 600;
+         font-size: 20px;
+         letter-spacing: 0.03em;
+         color: var(--white-color);
+         text-decoration: none;
+         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       }
+       
+       .site-nav .link:hover {
+         color: var(--accent-color);
+       }
+       
    
    .hero {
       padding-top: 280px;
@@ -230,13 +212,6 @@ margin: auto;
       margin-top: 50px;
   }
 
-   /* Customers */
-
-   .customers {
-      padding-top: 130px;
-      padding-bottom: 120px;
-   }
-
    /* footer */
    .logo {
       color: var(--accent-color);
@@ -288,6 +263,9 @@ margin: auto;
    }
 
    .modal {
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      font-size: 25px;
       position: absolute;
       right: 50%;
       bottom: 50%;
@@ -403,7 +381,7 @@ margin: auto;
    .textarea {
       display: block;
       resize: none;
-      width: 100%;
+      width: 390px;
       height: 120px;
       outline: none;
       border: 1px solid rgba(33, 33, 33, 0.2);
@@ -420,8 +398,10 @@ margin: auto;
    }
 
    textarea::placeholder {
+      font-family: "Nunito", sans-serif;
       font-size: 12px;
       line-height: 1.33;
+      width: 300px;
       letter-spacing: 0.04em;
       color: rgba(117, 117, 117, 0.5);
    }
@@ -433,33 +413,6 @@ margin: auto;
       letter-spacing: 0.04em;
       color: #757575;
       margin-bottom: 24px;
-   }
-
-   .modal-check-link {
-      color: var(--accent-color);
-   }
-
-   .user-policy-check {
-      display: flex;
-      order: -1;
-      margin-right: 8px;
-      justify-content: center;
-      align-items: center;
-      width: 16px;
-      height: 16px;
-      border: 1.25px solid var(--secondary-text-color);
-      border-radius: 2px;
-      fill: none;
-      cursor: pointer;
-
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-   }
-
-   .modal-form-check:checked+.user-policy-check {
-      background-color: var(--nav-color);
-      border: 1.25px solid var(--nav-color);
-      fill: #f4f4fd;
    }
 
    .modal-form-submit {
@@ -486,42 +439,32 @@ margin: auto;
       background-color: var(--nav-color);
    }
 
-
-
-
-
-
-
-
-
-
-
-
-   .portfolio-list {
+   .mystic-list {
       display: flex;
       flex-wrap: nowrap;
       column-gap: 24px;
       row-gap: 48px;
       margin-left: 70px;
+      list-style-type: none;
    }
 
-   .portfolio-item {
+   .mystic-item {
       width: 300px;
    }
 
-   .portfolio-link {
+   .mystic-link {
       display: block;
       text-decoration: none;
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
-   .portfolio-overlay {
+   .mystic-overlay {
       position: relative;
       overflow: hidden;
       border-radius: 50px;
    }
 
-   .portfolio-overlay-text {
+   .mystic-overlay-text {
       position: absolute;
       top: 0;
       left: 0;
@@ -542,17 +485,17 @@ margin: auto;
       font-size:large;
    }
 
-   .portfolio-link:hover .portfolio-overlay-text,
-   .portfolio-link:focus .portfolio-overlay-text {
+   .mystic-link:hover .mystic-overlay-text,
+   .mystic-link:focus .mystic-overlay-text {
       transform: translate(0, 0);
    }
 
-   .portfolio-text {
+   .mystic-text {
       margin: 0;
       color: black;
    }
 
-   .portfolio-card {
+   .mystic-card {
       border-radius: 30px;
       background-color: white;
       padding: 32px 0 32px 16px;
@@ -561,8 +504,8 @@ margin: auto;
    
    }
 
-   .portfolio-link:hover,
-   .portfolio-link:focus {
+   .mystic-link:hover,
+   .mystic-link:focus {
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
    }
@@ -593,3 +536,30 @@ margin: auto;
     padding-right: 15px;
     box-sizing: border-box; 
 }
+.back-to-top {
+   position: fixed;
+   bottom: 40px;
+   right: 40px;
+   width: 50px;
+   height: 50px;
+   border: none;
+   border-radius: 50%;
+   background-color: #4D5AE5;
+   color: white;
+   font-size: 24px;
+   cursor: pointer;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   transition: opacity 0.3s ease;
+ }
+ 
+ .back-to-top:hover {
+   background-color: #404BBF;
+ }
+ .icon-close {
+   width: 100%;
+   height: 100%;
+}
+ 
