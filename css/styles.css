@@ -461,7 +461,7 @@ margin: auto;
    .mystic-overlay {
       position: relative;
       overflow: hidden;
-      border-radius: 50px;
+      border-radius: 60px;
    }
 
    .mystic-overlay-text {
