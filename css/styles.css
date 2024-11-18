@@ -268,7 +268,7 @@ margin: auto;
       bottom: 50%;
       transform: translate(50%, 50%);
       width: 408px;
-      background-color: grey;
+      background-color: darkslategray;
       border-radius: 34px;
 
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -318,7 +318,7 @@ margin: auto;
       font-weight: 500;
       line-height: 1.5;
       text-align: center;
-      color: var(--secondary-text-color);
+      color: white;
 
       margin-top: 0;
       margin-bottom: 16px;
@@ -336,10 +336,10 @@ margin: auto;
 
    .modal-form-field {
       display: flex;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.17;
       letter-spacing: 0.04em;
-      color: var(--form-text-color);
+      color: white;
       margin-bottom: 4px;
    }
 
@@ -365,6 +365,7 @@ margin: auto;
       border-radius: 4px;
       padding: 0 0 0 38px;
       outline: none;
+      background-color: lightblue;
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
    .modal-form-input:focus {
@@ -377,6 +378,7 @@ margin: auto;
    }
 
    .textarea {
+      background-color: lightblue;
       display: block;
       resize: none;
       width: 390px;
@@ -483,8 +485,7 @@ margin: auto;
       font-size:16px;
    }
 
-   .mystic-link:hover .mystic-overlay-text,
-   .mystic-link:focus .mystic-overlay-text {
+   .mystic-link:hover .mystic-overlay-text {
       transform: translate(0, 0);
    }
 
